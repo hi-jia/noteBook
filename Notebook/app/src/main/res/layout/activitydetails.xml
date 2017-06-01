@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        layout="@layout/title"
+        />
+    <TextView
+        android:id="@+id/detail_time"
+        android:text="haahbsahb"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        />
+    <widget.LinedEditText
+        android:id="@+id/detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:enabled="true"
+        android:gravity="top"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="10"
+        android:minLines="8"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:scrollbars="vertical"
+        android:textSize="17sp"
+        ></widget.LinedEditText>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fbCancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:fab_expandDirection="right"
+        app:fab_colorNormal="#f0f01a"
+        app:fab_addButtonSize="mini">
+        <com.getbase.floatingactionbutton.FloatingActionButton
+
+            android:id="@+id/detail_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_done"
+            android:layout_marginBottom="0dp"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            android:layout_gravity="left|bottom"
+            app:fab_title="g" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/detail_Cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/delete_new"
+            android:layout_marginBottom="0dp"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            android:layout_gravity="left|bottom"
+            app:fab_title="g" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</LinearLayout>
